@@ -1,9 +1,9 @@
 body {
     margin : 0;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #212121;
 }
-
+    
 .mainbox {
     z-index: 5;
 	display: flex;
@@ -59,7 +59,7 @@ body {
     z-index: 2;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 4px;
     grid-auto-rows: minmax(180px, auto);
 }
 
@@ -103,7 +103,7 @@ body {
 .todoinput {
     width: 250px;
     height: 40px;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.8);
     font-size: 24px;
     border: none;
     background-color: rgba(255, 255, 255, 0.3);
@@ -111,17 +111,33 @@ body {
 
 .todotextposion {
     grid-column: 1;
-    grid-row: 1/4;
+    grid-row: 2/4;
+    align-self: center;
+    justify-self: center;
+    height: 300px;
+    width: 60%;
+    overflow: auto;
     z-index: 5;
-    font-size: 20px;
+    font-size: 24px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
     color:rgba(255, 211, 211, 0.9);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     text-align: center;
     align-self: center;
 }
 
+.todotextposion::-webkit-scrollbar{width: 6px;}
+.todotextposion::-webkit-scrollbar-track{background: #ececec;}
+.todotextposion::-webkit-scrollbar-thumb{background: rgba(0, 0, 0, 0.3);}
+.todotextposion::-webkit-scrollbar-thumb:hover{background: rgba(255, 211, 211, 0.9);}
+
+.todolist {
+    list-style: none;
+}
+
 .delbtn {
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    cursor:pointer;
 }
-
