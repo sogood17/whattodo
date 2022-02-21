@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>What to do</title>
+</head>
+<body>
+    <div class="mainbox">
+        <form class="form">  
+            <div class="main">
+            <input type="text" class="name" id="nameform" required maxlenth="15" color="#fff" placeholder="What is your name?">
+            </div>
+            <div>
+            <input type="submit" class="btn" id="submitBtn" required value="Log in">
+            </div>
+        </form>
+    </div>
+    <div class="grid">
+        <div class="hidden hellomessage">
+        <h3 id="hello">
+        </h3>
+        </div>
+        <div class="hidden clock">
+        <span id="time">
+        </span>
+        </div>
+        <div class="hidden todolistall">
+        <form id="todolistjs">
+            <input type="text" required class="todoinput" placeholder="write here"></input>
+        </form>
+        </div>
+        <div class ="hidden todotextposion" id="todotext">
+            <ul id="todoul">
+
+            </ul>
+        </div>
+    </div>
+<script src="background.js"></script>
+<script src="name.js"></script>
+<script src="clock.js"></script>
+<script src="todolist.js"></script>
+</body>
+</html>
